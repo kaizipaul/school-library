@@ -27,12 +27,9 @@ class App
 
   def library_menu
     puts ''
-    puts ''
     puts 'Welcome to the School Library App!'
     puts ''
-    puts ''
     puts 'Please choose one of these options by entering a number'
-    puts ''
     puts ''
     puts '1- List all available books'
     puts '2- List all people'
@@ -68,7 +65,6 @@ class App
       show_menu
     end
     puts 'List of available books:'
-    puts ''
     @book.each_with_index do |item, i|
       puts "#{i} Title: #{item.title}, Author: #{item.author}"
     end
@@ -81,7 +77,6 @@ class App
       show_menu
     end
     puts 'List of people:'
-    puts ''
     @people.each_with_index do |item, i|
       puts "#{i}-- [#{item.class}] Name:#{item.name},  Age: #{item.age}"
     end
@@ -143,10 +138,8 @@ class App
   end
 
   def show_menu
-    puts ''
     print 'Press Enter to go back to menu'
     gets.chomp
-    puts ''
     run
   end
 
